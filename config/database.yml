@@ -9,8 +9,9 @@ development:
   database: rapidrails_api_development
 
 test:
-  <<: *default
-  database: rapidrails_api_test
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
 
 production:
   primary:
