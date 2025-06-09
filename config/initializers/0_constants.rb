@@ -5,6 +5,9 @@ COMPANY_LOCATION = 'London, UK'
 HOST = "rapidrails.dev"
 BASE_URL = "https://#{HOST}"
 
+# Error tracking
+SENTRY_DSN_RAILS = nil
+
 # Email-related constants
 DEFAULT_FROM_EMAIL = "no-reply@#{HOST}"
 
