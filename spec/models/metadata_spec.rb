@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: metadata
+#
+#  id         :bigint           not null, primary key
+#  key        :string
+#  value      :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 require 'rails_helper'
 
 RSpec.describe Metadata, type: :model do

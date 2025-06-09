@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: metadata
+#
+#  id         :bigint           not null, primary key
+#  key        :string
+#  value      :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 class Metadata < ApplicationRecord
   validates :key, presence: true, uniqueness: true
   validates :value, presence: true
