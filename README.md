@@ -16,4 +16,5 @@ Edit `config/initializers/0_constants.rb` with your details:
 
 * `DATABASE_URL`, `CACHE_DATABASE_URL`, `QUEUE_DATABASE_URL`, `CABLE_DATABASE_URL` – required when deploying to services like Heroku so Rails can connect to PostgreSQL
 * `SOLID_QUEUE_IN_PUMA` – set to run the Solid Queue supervisor inside the Puma process when you don't have a separate job processor
+* `RAILS_MASTER_KEY` – required in production so Rails can decrypt `config/credentials.yml.enc`
 
