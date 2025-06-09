@@ -20,5 +20,8 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+  * When deploying to Heroku, configure `DATABASE_URL`,
+    `CACHE_DATABASE_URL`, `QUEUE_DATABASE_URL`, and `CABLE_DATABASE_URL` so
+    Rails can connect to PostgreSQL.
 
 * ...
