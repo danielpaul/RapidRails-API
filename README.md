@@ -1,27 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Minimal setup steps for getting the application running.
 
-Things you may want to cover:
+## Configuration
 
-* Ruby version
+Edit `config/initializers/0_constants.rb` with your details:
 
-* System dependencies
+* `APP_NAME` – name displayed in emails
+* `HOST`/`BASE_URL` – domain the app runs on
+* `DEFAULT_FROM_EMAIL` – default sender for mailers
+* `COMPANY_NAME` and `COMPANY_LOCATION`
+* `SENTRY_DSN_RAILS` – set to your Sentry DSN (or leave `nil` to disable)
 
-* Configuration
+## Environment variables
 
-* Database creation
+* `DATABASE_URL`, `CACHE_DATABASE_URL`, `QUEUE_DATABASE_URL`, `CABLE_DATABASE_URL` – required when deploying to services like Heroku so Rails can connect to PostgreSQL
+* `SOLID_QUEUE_IN_PUMA` – set to run the Solid Queue supervisor inside the Puma process when you don't have a separate job processor
+* `RAILS_MASTER_KEY` – required in production so Rails can decrypt `config/credentials.yml.enc`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-  * When deploying to Heroku, configure `DATABASE_URL`,
-    `CACHE_DATABASE_URL`, `QUEUE_DATABASE_URL`, and `CABLE_DATABASE_URL` so
-    Rails can connect to PostgreSQL.
-
-* ...
