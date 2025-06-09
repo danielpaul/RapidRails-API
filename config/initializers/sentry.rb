@@ -1,12 +1,9 @@
 # DSN is safe to store here and be visible to the public
 # https://docs.sentry.io/product/sentry-basics/dsn-explainer/
 
-ENABLE_SENTRY = ENV.fetch('ENABLE_SENTRY', 'false') != 'false'
-SENTRY_DSN_RAILS = ENV['SENTRY_DSN']
-
 Sentry.init do |config|
   # unset the SENTRY_DSN variable to disable Sentry
-  config.dsn = ENABLE_SENTRY ? SENTRY_DSN_RAILS : nil
+  config.dsn = SENTRY_DSN_RAILS
 
   config.breadcrumbs_logger = %i[active_support_logger http_logger]
 

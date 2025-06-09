@@ -10,8 +10,6 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
-  * Set `ENABLE_SENTRY=true` and `SENTRY_DSN` in your environment to enable
-    Sentry error tracking.
 
 * Database creation
 
