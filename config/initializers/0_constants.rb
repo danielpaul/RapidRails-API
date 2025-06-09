@@ -1,0 +1,21 @@
+# Application constants
+APP_NAME = "RapidRails"
+COMPANY_NAME = "Daniel Paul"
+COMPANY_LOCATION = "London, UK"
+HOST = "rapidrails.dev"
+BASE_URL = "https://#{HOST}"
+
+# Error tracking
+SENTRY_DSN_RAILS = nil
+
+# Email-related constants
+DEFAULT_FROM_EMAIL = "no-reply@#{HOST}"
+
+EMAIL_PRIMARY_BUTTON_COLOR = "#007bff"
+EMAIL_PRIMARY_BUTTON_TEXT_COLOR = "#ffffff"
+EMAIL_LIGHT_BACKGROUND_COLOR = "#f4f4f7"
+EMAIL_LIGHT_TEXT_COLOR = "#333333"
+EMAIL_LIGHT_CARD_BACKGROUND_COLOR = "#ffffff"
+EMAIL_DARK_BACKGROUND_COLOR = "#1a1a1a"
+EMAIL_DARK_TEXT_COLOR = "#ffffff"
+EMAIL_DARK_CARD_BACKGROUND_COLOR = "#2d2d2d"
