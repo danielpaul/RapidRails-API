@@ -9,9 +9,11 @@ development:
   database: rapidrails_api_development
 
 test:
-  adapter: sqlite3
-  database: db/test.sqlite3
-  pool: 5
+  <<: *default
+  database: rapidrails_api_test
+  username: postgres
+  password: postgres
+  host: 127.0.0.1
 
 production:
   primary:
