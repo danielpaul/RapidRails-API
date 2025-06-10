@@ -28,4 +28,12 @@ RSpec.describe Metadata, type: :model do
       expect(Metadata['missing']).to be_nil
     end
   end
+
+  describe 'discard' do
+    it 'sets discarded_at timestamp instead of deleting' do
+      metadata = create(:metadata)
+      metadata.discard
+      expect(metadata.discarded_at).not_to be_nil
+    end
+  end
 end
