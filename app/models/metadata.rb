@@ -9,6 +9,8 @@
 #  updated_at :datetime         not null
 #
 class Metadata < ApplicationRecord
+  include Discard::Model
+
   validates :key, presence: true, uniqueness: true
   validates :value, presence: true
 
