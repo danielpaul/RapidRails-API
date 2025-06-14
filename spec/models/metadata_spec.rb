@@ -36,4 +36,13 @@ RSpec.describe Metadata, type: :model do
       expect(metadata.discarded_at).not_to be_nil
     end
   end
+
+  describe 'hashid' do
+    it 'uses hashid in to_param and find' do
+      metadata = create(:metadata)
+      hashid = metadata.to_param
+      expect(hashid).to eq(metadata.hashid)
+      expect(Metadata.find(hashid)).to eq(metadata)
+    end
+  end
 end
