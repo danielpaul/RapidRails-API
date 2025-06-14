@@ -19,3 +19,8 @@ Edit `config/initializers/0_constants.rb` with your details:
 * `RAILS_MASTER_KEY` – required in production so Rails can decrypt `config/credentials.yml.enc`
 * A running PostgreSQL instance is required for both development and test environments
 
+## Development
+
+Run `bin/dev` to start the web server with Solid Queue enabled so background jobs
+are processed just like in production.
+
