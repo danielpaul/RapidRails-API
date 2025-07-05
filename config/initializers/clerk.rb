@@ -1,0 +1,4 @@
+Clerk.configure do |c|
+  c.secret_key = Rails.application.credentials.dig(:clerk_secret_key) || ENV["CLERK_SECRET_KEY"] || "sk_test_1234567890"
+  c.logger = Rails.logger if Rails.env.development?
+end
