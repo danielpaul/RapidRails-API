@@ -1,6 +1,9 @@
 # Application constants
 APP_NAME = "RapidRails"
 
+# Salt used to generate HashIDs
+HASHID_SALT = ENV.fetch('HASHID_SALT', '618667bffe402a61')
+
 HOST = "rapidrails.dev"
 BASE_URL = "https://#{HOST}"
 

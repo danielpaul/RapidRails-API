@@ -112,6 +112,10 @@ GEM
       raabro (~> 1.4)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    hashid-rails (1.4.1)
+      activerecord (>= 4.0)
+      hashids (~> 1.0)
+    hashids (1.0.6)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     io-console (0.8.0)
@@ -355,6 +359,7 @@ DEPENDENCIES
   discard
   factory_bot_rails
   faker
+  hashid-rails
   kamal
   pagy
   pg (~> 1.0)

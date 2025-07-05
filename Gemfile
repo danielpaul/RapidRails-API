@@ -35,6 +35,9 @@ gem "pagy"
 # Soft delete support
 gem "discard"
 
+# HashID support for obfuscating record IDs
+gem "hashid-rails"
+
 # Error tracking
 gem "sentry-rails"
 
