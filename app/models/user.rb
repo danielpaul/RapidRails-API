@@ -12,6 +12,8 @@
 #  index_users_on_clerk_id  (clerk_id) UNIQUE
 #
 class User < ApplicationRecord
+  validates :clerk_id, presence: true, uniqueness: true
+
   def clerk_user
     @clerk_user ||= fetch_clerk_user
   end
